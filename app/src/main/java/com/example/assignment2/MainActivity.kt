@@ -40,7 +40,7 @@ fun Greeting() {
            horizontalAlignment = Alignment.CenterHorizontally,
            verticalArrangement = Arrangement.Center) {
         Text( "Alycia Christiansen", fontSize =  21.sp, fontWeight = FontWeight.Bold)
-        Text( "#0860181" )
+        Text( "#123456" )
 
         val context = LocalContext.current
         Button(onClick = { context.startActivity(Intent(context, SoftwareChallengesActivity::class.java)) }, shape = CutCornerShape(15)) {
