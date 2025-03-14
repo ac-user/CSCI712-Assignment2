@@ -49,6 +49,10 @@ fun Greeting() {
         Button(onClick = { context.startActivity(intent)}, shape = CutCornerShape(15)){
             Text( text = "Start Activity Implicitly")
         }
+
+        Button(onClick = {context.startActivity(Intent(context, ImageCaptureActivity::class.java))}, shape = CutCornerShape(15)){
+            Text("View Image Activity")
+        }
     }
 }
 

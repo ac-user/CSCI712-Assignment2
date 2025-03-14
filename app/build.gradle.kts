@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.camera.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -57,6 +58,15 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    val camera_version = "1.4.1"
+    implementation("androidx.camera:camera-camera2:$camera_version")
+    implementation("androidx.camera:camera-lifecycle:$camera_version")
+    implementation("androidx.camera:camera-view:$camera_version")
+
+    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+
     val nav_version = "2.8.6"
     implementation("androidx.navigation:navigation-compose:$nav_version")
+
+    implementation("io.coil-kt:coil-compose:1.4.0")
 }
