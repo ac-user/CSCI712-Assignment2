@@ -69,4 +69,40 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
     implementation("io.coil-kt:coil-compose:1.4.0")
+
+    val espressoVersion = "3.6.1"
+    androidTestImplementation("androidx.test.espresso:espresso-core:$espressoVersion")
+
+    // Core library
+    val androidXTestVersion = "1.6.1"
+    androidTestImplementation("androidx.test:core:$androidXTestVersion")
+
+    // AndroidJUnitRunner and JUnit Rules
+    val testRunnerVersion = "1.6.2"
+    val testRulesVersion = "1.6.1"
+    androidTestImplementation("androidx.test:runner:$testRunnerVersion")
+    androidTestImplementation("androidx.test:rules:$testRulesVersion")
+
+    // Assertions
+    val testJunitVersion = "1.2.1"
+    val truthVersion = "1.6.0"
+    androidTestImplementation("androidx.test.ext:junit:$testJunitVersion")
+    androidTestImplementation("androidx.test.ext:truth:$truthVersion")
+
+    // Espresso dependencies
+    androidTestImplementation( "androidx.test.espresso:espresso-core:$espressoVersion")
+    androidTestImplementation( "androidx.test.espresso:espresso-contrib:$espressoVersion")
+    androidTestImplementation( "androidx.test.espresso:espresso-intents:$espressoVersion")
+    androidTestImplementation( "androidx.test.espresso:espresso-accessibility:$espressoVersion")
+    androidTestImplementation( "androidx.test.espresso:espresso-web:$espressoVersion")
+    androidTestImplementation( "androidx.test.espresso.idling:idling-concurrent:$espressoVersion")
+
+    // The following Espresso dependency can be either "implementation",
+    // or "androidTestImplementation", depending on whether you want the
+    // dependency to appear on your APK"s compile classpath or the test APK
+    // classpath.
+    androidTestImplementation( "androidx.test.espresso:espresso-idling-resource:$espressoVersion")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
+    testImplementation(kotlin("test"))
+
 }
